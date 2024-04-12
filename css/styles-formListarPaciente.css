@@ -1,0 +1,313 @@
+body {
+  margin: 0;
+  background-image: url('../imagens/fotoFundo.jpg');
+  background-size: cover;
+  min-height: 100vh; /* Garante que o corpo ocupe pelo menos toda a altura da viewport */
+  display: flex;
+  flex-direction: column;
+}
+
+main{
+  flex-grow: 1;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(2, 55, 87);
+    width: 100%;
+    height: 75px;
+    margin: 0 auto;
+    
+}
+#logo img {
+    width: 100px;
+    height: auto;
+    margin-left: 250px;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 100px;
+    align-items: center;
+    
+}
+
+.menu ul li {
+    display: inline;
+    margin-right: 130px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 280;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.d-flex{
+    display: flex !important;
+}
+
+.align-items-center {
+    align-items: center !important;
+}
+
+.admin-area{
+    margin: 0px auto 0px 50px;
+}
+
+.admin-btn {
+    padding: 10px 20px;
+    background-color: rgb(2, 55, 87);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    border-color: #ffffff;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/* INICIO CSS DA MAIN */
+
+.container{
+  display: flex; /* Alterando para flex */
+    text-align: left;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    flex-direction: row;
+    max-width: 800px;
+    margin: 100px auto;
+    border-radius: 10px;
+    position: relative;
+    background-color: none;
+} 
+
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid #ddd;
+  background-color: #494949;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #222e35;
+  color: white;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+.button-voltar{
+  margin-top: 325px;
+}
+
+button {
+    padding: 8px 10px;
+    background-color: rgb(10, 36, 51);
+    color: #fff;
+    border-color: rgb(147, 182, 214);
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 10px;
+    transition: background-color 0.6s ease;
+}
+button:hover{
+    background-image: radial-gradient(rgb(3, 75, 138), rgb(10, 36, 51)); /* Gradiente radial com a cor mudando do centro para as bordas */
+    /* background-position: center; Centralizar o gradiente radial */
+    /* background-repeat: no-repeat; Evitar repetição do gradiente */
+}
+
+
+/* INICIO DO CSS DO FOOTER */
+
+footer {
+  padding: 0px; /* Adiciona espaço interno ao footer */
+  margin-top: auto; /* Empurra o rodapé para o final da página */
+  height: 100px; /* Define a altura desejada para o footer */
+}
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1* var(--bs-gutter-y));
+    margin-right: calc(-.5* var(--bs-gutter-x));
+    margin-left: calc(-.5* var(--bs-gutter-x));
+}
+
+.padding-block {
+    padding: 1rem 0;
+}
+
+*,::after, ::before {
+    box-sizing: border-box;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.font-futura-book {
+    color: #fff;
+    font-family: 'FuturaBT-Book', sans-serif;
+}
+
+.color-default {
+    color: #0a2433;
+}
+
+.conteudo-footer {
+    max-width: 960px;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x)* .5);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+section{
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.bg-default {
+    background: #0a2433;
+}
+
+.col-lg-2{
+    flex: 0 0 auto;
+    width: 26.66666667%;
+}
+
+.col-lg-3 {
+    flex: 0 0 auto;
+    margin-right: 60px;
+    width: 25%;
+  }
+
+
+
+footer #networkFooter {
+    padding: 3.5rem 0;
+  }
+
+footer #networkFooter .list-network {
+    gap: 0 10px;
+    width: 75%;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+
+
+
+
+/* PARTE DO NETWORK DO FOOTER */
+
+footer {
+    margin-top: auto;
+}
+.bg-clean {
+    background: #f5f3f2;
+  }
+
+  .conteudo-network {
+    max-width: 960px;
+    --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * .5);
+  padding-left: calc(var(--bs-gutter-x) * .5);
+  margin-right: auto;
+  margin-left: auto;
+  }
+
+  footer #networkFooter #contentNetworkFooter {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  #logo2{text-align:center;}
+
+  .col-lg-9 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+
+  .title-block h2.text-white:after {
+    background: #fff
+}
+
+
+  #contentNetwork {
+    margin-top: 2rem;
+  }
+
+  .justify-content-lg-between {
+    justify-content: space-between !important;
+  }
+
+  .justify-content-center {
+    justify-content: center !important;
+}
+
+  #contentNetwork figure:first-child {
+    position: relative;
+    right: 20px;
+  }
+
+@media (min-width: 768px) {
+  #contentNetwork .me-3 {
+    margin-right: 0 !important;
+  }
+}
+.transition-all {
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+}
+.me-3 {
+  margin-right: 1rem !important;
+}
+figure {
+  margin: 0;
+    margin-right: 0px;
+}
+
+footer #networkFooter .list-network li span {
+    border-radius: 10px;
+    padding: 0.5rem 0.7rem;
+    font-weight: normal;
+    font-size: 1.25rem;
+    background-color: #0a2433;
+    color: #f5f3f2;
+  }
+
+  footer #copyright {
+    border-top: 1px solid;
+    padding-top: 30px;
+    margin-top: 40px;
+  }
